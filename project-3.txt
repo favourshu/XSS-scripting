@@ -1,0 +1,107 @@
+
+
+GROUP 2:
+                   CLIENT-SITE VULNERAVILITIES
+
+    Client-site vulnerabilities are vulnerabilities that affect the client or the target victim.
+
+ There are various types of client-site vulnerabilities but we will forcus more on XSS Vulnerability.
+  
+1-) XSS ( Cross-Site Scripting ):
+
+       It is a web security vulnerability that allows an attacker to see the interactions that users have with a vulnerable application. It allows an attacker to masquerede as a victim user
+
+and carry out actions that the actual user is able to perform and access any of the users data.
+  
+      It is the 3rd most affecting  client-site vulnerabilities affecting users on websites applications now our days
+
+
+      A-) HOW XSS WORKS:
+
+ XSS works by manipulating a vulnerable web site so that it returns malicious javascript/html script to users.
+
+     B-) WHAT IS XSS USED FOR:
+
+ - To impersonate or act as the actual user.
+
+ - Carryong out actions that the real user is able to perform.
+
+ - Reading data that the user is able to access.
+
+ - Capturing the users login credentials like passwords, username, cookies and so on.
+
+ - Injecting trojan functionality into the web site.
+
+    C-) THE IMPACT OF XSS ON APPLICATIONS WEB PAGES:
+
+ In an application holding sensitive data such as banking transactions, emails and so on the impact will usually be serious.
+
+     TYPES OF XSS VULNERABILITY
+
+ There are three ( 3 ) types namely;
+
+ 1- Reflected XSS.
+
+ 2- Stored XSS.
+
+ 3- DOM-Based XSS ( Document Object Model )
+
+  
+  1-REFLECTED XSS:
+
+     It is a type of XSS where the malicious script / payload is injected in the current HTTP  request comming from the client. Reflected XSS is type which needs the client to clck on 
+
+the link of the malicious code / payload before the code executes in the client web browser. 
+  
+
+  The XSS code injected in the request is seen reflecting on the browser and thats why its called  relected.
+  
+N.B1; Before going ahead it is important to know the types of request.
+
+  TYPES OF REQUEST 
+
+ a) GET Request
+
+ b) POST Request
+
+      Both GET and POST request are HTTP methods used to send data between a browser and a web server 
+  
+  N.B2;The following are the differences between the GET and the POST request.
+
+  FETURES                                        GET Request                                       POST Request
+ 
+ - Data location                            - In the URL ( Visible )                             - In the request body ( hidden )
+  
+ - Data length                              - Limited                                            - Unlimited
+
+ - Purpose                                  - Retrieve data ( retrieve request )                 - Send/submit data
+
+ _ Security                                 - Less secured                                       - More secured
+ 
+ - History                                  - Stored in browser                                  - Not store
+
+ - Data type                                - Text only                                          - Text + binary
+
+ 2- STORED XSS:
+      
+     This XSS is more dangerous than reflected XSS because the malicious code is stored in the web site , stored XSS does not need the user/target to click the link before the code 
+
+executes. 
+ 
+ EXAMPLE EXPLAINATION: In a web site where users comment on the services they recieved, an attacker comes to that same web site and write his/her own comment and add a malicious code
+
+ in the comment and save it. Effect;
+                              
+                                  - Any other user who enters that same website to write a comment , the malicious code executes automatically when the website is open and by that action
+
+the token sessions and cookies is accessible by the attacker in his or her machine.
+
+  3-DOM-Based XSS  ( Document Object Model)
+
+   Def: DOM-Based XSS arises when a javascript/html code takes data from the client supplied inputs ( session tokens) and passes it to a sink that performs dynamic code execution in the DOM
+
+                    DOM-Based XSS is different from reflected XSS in the sense that when the user enters the application the script does not get directly reflected in the page but the 
+
+entered application uses some javascript to read the search bar/search field an write it in an element within the HTML Document.
+  WHAT IS A SINK;
+           The innerHTML is dangerous HTML sink that takes a string and pass it to html.
